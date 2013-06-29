@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.bluetrainsoftware.parent</groupId>
+    <artifactId>java-parent</artifactId>
+    <version>1.1</version>
+  </parent>
+
+  <groupId>com.bluetrainsoftware.common</groupId>
+  <artifactId>common-agent-loader</artifactId>
+  <packaging>jar</packaging>
+
+  <name>common-agent-loader</name>
+  <version>1.1-SNAPSHOT</version>
+  <description>
+    Allows dynamic loading of agents. Forked from JMockIt into general purpose artifact, includes JDK6
+    code which is licensed using the GPLv2 with Classpath Exception. This license is detailed here: http://openjdk.java.net/legal/gplv2+ce.html
+
+    These classes are normally only in the JDK, so if you are running a JRE, you otherwise are unable
+  </description>
+
+  <licenses>
+    <license>
+      <name>gplv2+ce</name>
+      <comments>OpenJDK code</comments>
+    </license>
+    <license>
+      <name>MIT</name>
+      <comments>Default license for BTS software</comments>
+    </license>
+  </licenses>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.2</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
