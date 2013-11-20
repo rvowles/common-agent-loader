@@ -8,7 +8,7 @@
   </parent>
 
   <groupId>com.bluetrainsoftware.common</groupId>
-  <artifactId>common-agent-loader</artifactId>
+  <artifactId>agent-loader</artifactId>
   <packaging>jar</packaging>
 
   <name>common-agent-loader</name>
