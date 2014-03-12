@@ -11,7 +11,7 @@
   <packaging>jar</packaging>
 
   <name>common-agent-loader</name>
-  <version>1.1</version>
+  <version>1.2-SNAPSHOT</version>
   <description>
     Allows dynamic loading of agents. Forked from JMockIt into general purpose artifact, includes JDK6
     code which is licensed using the GPLv2 with Classpath Exception. This license is detailed here: http://openjdk.java.net/legal/gplv2+ce.html
@@ -55,8 +55,4 @@
       </plugin>
     </plugins>
   </build>
-
-  <scm>
-    <tag>agent-loader-1.1</tag>
-  </scm>
 </project>
